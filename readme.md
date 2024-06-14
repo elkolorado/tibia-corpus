@@ -7,7 +7,7 @@ Welcome to the `tibiacorpus.py` project! This is a Python script that allows to 
 
 `tibiacorpus.txt` contains the all the Tibia words from above data.
 
-You can also refer to it by fetching it from: [tibiacorpus.txt](https://raw.githubusercontent.com/elkolorado/tibiacorpus/main/tibiacorpus.txt)
+You can also refer to it by fetching it from: [tibiacorpus.txt](https://raw.githubusercontent.com/elkolorado/tibia-corpus/main/tibiacorpus.txt)
 
 ## Developing
 To recreate `tibiacorpus.txt` with recent data, simply run `corpus.py`:
