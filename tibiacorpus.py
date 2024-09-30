@@ -2,9 +2,9 @@ import requests
 import re
 
 # urls
-npc_conversations = "https://resources.talesoftibia.com/data/npcs/transcripts.json"
-npc_dialogues = "https://resources.talesoftibia.com/data/npcs/npc-data.json"
-books = "https://resources.talesoftibia.com/data/books/books.json"
+npc_conversations = "https://raw.githubusercontent.com/s2ward/tibia/main/data/npcs/npc_transcript_database.json"
+npc_dialogues = "https://raw.githubusercontent.com/s2ward/tibia/main/data/npcs/npc_metadata.json"
+books = "https://raw.githubusercontent.com/s2ward/tibia/refs/heads/main/data/books/book_database.json"
 
 # get the data
 npc_conversations_response = requests.get(npc_conversations)
@@ -55,7 +55,7 @@ words = [word for word in words if word]
 words = sorted(words, key=lambda word: (len(word), word))
 
 # save the words to a file
-with open('words.txt', 'w', encoding='utf-8') as f:
+with open('tibiacorpus.txt', 'w', encoding='utf-8') as f:
     for word in words:
         f.write(word)
         if word != words[-1]:
